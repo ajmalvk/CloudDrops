@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_marginRight="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/shadow_product_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/TV_category_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/f_product_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/main_cat_two"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.68" />
+
+        <TextView
+            android:id="@+id/off_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/curved_green_bg"
+            android:paddingLeft="4dp"
+            android:paddingTop="1dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="1dp"
+            android:text="OFF450"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+    <TextView
+        android:id="@+id/f_product_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+
+        android:text="Product Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/f_product_description"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="3dp"
+        android:text="Checked Slim Fit Shirt with Patch Pocket"
+        android:textColor="@color/black"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/f_product_name" />
+
+    <TextView
+        android:id="@+id/f_product_actual_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="3dp"
+        android:gravity="top"
+        android:text="85 INR"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/f_product_description" />
+
+    <TextView
+        android:id="@+id/f_product_selling_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:gravity="top"
+        android:text="85 INR"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/f_product_actual_price"
+        app:layout_constraintTop_toBottomOf="@id/f_product_description" />
+</android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

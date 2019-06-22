@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/curved_light_grey_bg_crt"
+            android:padding="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/product_image"
+                android:background="@drawable/place_holder_user" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:text="2L Fresh Bisleri Drinking Water Bisleri "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/product_title">
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/ic_minus"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/product_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:gravity="top"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/imageView9" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/ic_plus"
+                app:layout_constraintStart_toEndOf="@+id/product_quantity"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/BT_remove_children"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_delete"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout8" />
+    </android.support.constraint.ConstraintLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_grey_heavy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

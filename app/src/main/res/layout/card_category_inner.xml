@@ -1,0 +1,61 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_view_items"
+    android:layout_width="120dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout18"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/sub_sub_category_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/water_mark_two"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/gradient_black_tr"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/_sub_sub_category_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Ricesjk"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
