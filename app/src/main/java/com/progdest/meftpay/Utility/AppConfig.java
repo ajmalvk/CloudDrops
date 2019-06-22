@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class AppConfig {
-    //app config
+    //app config 1234
     private static final AppConfig ourInstance = new AppConfig();
     public static String app_tokken="";
     public static String site_preference_filename = "com.progdest.meftpay";
